@@ -1,1 +1,17 @@
-cl_crosshairalpha 200; cl_crosshaircolor 2; cl_crosshairdot 0; cl_crosshairgap -3; cl_crosshairsize 3; cl_crosshairstyle 4; cl_crosshairusealpha 1; cl_crosshairthickness 1.15; cl_crosshair_drawoutline 0;
+#! /bin/bash
+# numbers.sh
+# Kyle Burack
+echo "Enter a number: "
+read number
+
+initial=1
+while [ $initial -le "$number" ]
+do
+	if [ $((initial % 2)) -eq 0 ]
+	then
+		echo "$initial even"
+	else
+		echo "$initial odd"
+	fi
+	initial=$((initial + 1))
+done
