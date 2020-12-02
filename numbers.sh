@@ -1,17 +1,17 @@
 #! /bin/bash
 # numbers.sh
 # Kyle Burack
-echo "Enter a number: "
-read number
+echo "Enter a posititve number: "
+read NUMBER
 
-initial=1
-while [ $initial -le "$number" ]
+N=1
+while [ $NUMBER -le "$n" ]
 do
-	if [ $((initial % 2)) -eq 0 ]
+	if [ $((N%2)) -eq 0 ]
 	then
-		echo "$initial even"
+		echo "$N even"
 	else
-		echo "$initial odd"
+		echo "$N odd"
 	fi
-	initial=$((initial + 1))
+	N=$((N+1))
 done
