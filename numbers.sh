@@ -5,7 +5,7 @@ echo "Enter a posititve number: "
 read NUMBER
 
 N=1
-while [[ $NUMBER -le "$N" ]]
+while [ $NUMBER -le "$N" ]
 do
 		if [ $((N%2)) -eq 0 ]
 		then
